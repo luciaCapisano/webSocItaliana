@@ -1,0 +1,161 @@
+.masthead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-size: cover !important;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.65) 100%), url(/assets/images/portada-teatro.png) no-repeat center center scroll;
+}
+
+
+.historia-teatro {
+	display: flex;
+}
+
+
+.imagenes-historia {
+	display: flex;
+	justify-content: space-around;
+}
+
+.img-historia {
+	filter: grayscale(100%);
+	width: 33%;
+}
+
+.img-historia:hover {
+	/*transform: translate(0px, 0px) scale(1.3, 1.3);*/
+	filter: none;
+	transition: .3s;
+}
+
+
+.producciones-obras iframe {
+	width: 50%;
+	align-items: center;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 3px;
+	grid-row-gap: 1px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+	grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.div5 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.div6 {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.div7 {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.div8 {
+	grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+	grid-area: 3 / 3 / 4 / 4;
+}
+
+.div10 {
+	grid-area: 4 / 1 / 5 / 2;
+}
+
+.div11 {
+	grid-area: 4 / 2 / 5 / 3;
+}
+
+.div12 {
+	grid-area: 4 / 3 / 5 / 4;
+}
+
+.div13 {
+	grid-area: 5 / 1 / 6 / 2;
+}
+
+.div14 {
+	grid-area: 5 / 2 / 6 / 3;
+}
+
+.div15 {
+	grid-area: 5 / 3 / 6 / 4;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15 {
+	height: 230px;
+}
+
+
+iframe {
+	width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width:480px) {
+
+	.historia-teatro {
+		display: block;
+		text-align: center;
+	}
+
+	.img-historia {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.producciones-obras {
+		display: block;
+		text-align: center;
+	}
+
+	.producciones-obras iframe {
+		width: auto;
+	}
+
+	.parent {
+		display: block;
+		padding: 10px;
+	}
+
+
+}

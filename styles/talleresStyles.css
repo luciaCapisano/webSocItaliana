@@ -1,0 +1,135 @@
+.descripcion-actividades{
+text-align: center;
+}
+
+
+.contact-button {
+    --color: #53795B;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.contact-button::before, .contact-button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+
+   .contact-button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .contact-button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .contact-button:hover::before, .contact-button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .contact-button:hover {
+    color: white;
+   }
+   
+   .contact-button:active {
+    filter: brightness(.8);
+   }
+
+
+.horarios {
+	width: 100%;
+	text-align: center;
+}
+
+.datagrid table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+
+.datagrid {
+	font: normal 12px/150% Arial, Helvetica, sans-serif;
+	background: #fff;
+	overflow: hidden;
+	border: 2px solid #000000;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.datagrid table td,
+.datagrid table th {
+	padding: 14px 20px;
+    background-image: url(/assets/images/hip-square.webp);
+}
+
+.datagrid table thead th {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+	background: -moz-linear-gradient(center top, #000000 5%, #000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000');
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	border-left: 0px solid #000000;
+}
+
+.datagrid table thead th:first-child {
+	border: none;
+}
+
+.datagrid table tbody td {
+	color: #990000;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: 'Biryani', sans-serif;
+	text-size-adjust: initial;
+	word-wrap: normal;
+}
+
+.datagrid table tbody td:first-child {
+	border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+
+
+@media (max-width:480px){
+
+    .datagrid {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+
+
+}
